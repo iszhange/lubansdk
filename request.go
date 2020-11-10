@@ -21,3 +21,13 @@ func TaobaoTbkDgVegasSendStatusRequest() *requests.TaobaoTbkDgVegasSendStatus {
 	var r requests.TaobaoTbkDgVegasSendStatus
 	return r.New()
 }
+
+func TaobaoTbkDgVegasSendReportRequest() *requests.TaobaoTbkDgVegasSendReport {
+	var r requests.TaobaoTbkDgVegasSendReport
+	return r.New()
+}
+
+func TaobaoTbkScVegasSendReportRequest() *requests.TaobaoTbkScVegasSendReport {
+	var r requests.TaobaoTbkScVegasSendReport
+	return r.New()
+}

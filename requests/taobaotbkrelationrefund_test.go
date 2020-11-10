@@ -27,7 +27,7 @@ func TestTaobaoTbkRelationRefund(t *testing.T) {
 	if err != nil {
 		responseError, _ := lubantop.ErrorResponse(body)
 		t.Error(responseError)
+	} else {
+		fmt.Println(result)
 	}
-
-	fmt.Println(result)
 }

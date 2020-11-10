@@ -162,3 +162,31 @@ type TaobaoTbkDgVegasSendStatusResponse struct {
 	} `json:"data"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkDgVegasSendReportResponse struct {
+	Result struct {
+		Model struct {
+			RelationRptList []struct {
+				BizDate    string `json:"biz_date"`
+				FundNum    int    `json:"fund_num"`
+				RelationID int    `json:"relation_id"`
+			} `json:"relation_rpt_list"`
+		} `json:"model"`
+		Success bool `json:"success"`
+	} `json:"result"`
+	RequestID string `json:"request_id"`
+}
+
+type TaobaoTbkScVegasSendReportResponse struct {
+	Result struct {
+		Model struct {
+			RelationRptList []struct {
+				BizDate    string `json:"biz_date"`
+				FundNum    int    `json:"fund_num"`
+				RelationID int    `json:"relation_id"`
+			} `json:"relation_rpt_list"`
+		} `json:"model"`
+		Success bool `json:"success"`
+	} `json:"result"`
+	RequestID string `json:"request_id"`
+}
