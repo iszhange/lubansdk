@@ -153,3 +153,12 @@ type TaobaoTbkRelationRefundResponse struct {
 	} `json:"result"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkDgVegasSendStatusResponse struct {
+	Data struct {
+		ResultList []struct {
+			IsNewUser string `json:"is_new_user"`
+		} `json:"result_list"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}

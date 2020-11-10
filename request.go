@@ -16,3 +16,8 @@ func TaobaoTbkRelationRefundRequest() *requests.TaobaoTbkRelationRefund {
 	var r requests.TaobaoTbkRelationRefund
 	return r.New()
 }
+
+func TaobaoTbkDgVegasSendStatusRequest() *requests.TaobaoTbkDgVegasSendStatus {
+	var r requests.TaobaoTbkDgVegasSendStatus
+	return r.New()
+}
