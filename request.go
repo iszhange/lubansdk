@@ -31,3 +31,8 @@ func TaobaoTbkScVegasSendReportRequest() *requests.TaobaoTbkScVegasSendReport {
 	var r requests.TaobaoTbkScVegasSendReport
 	return r.New()
 }
+
+func TaobaoTbkSpreadGetRequest() *requests.TaobaoTbkSpreadGet {
+	var r requests.TaobaoTbkSpreadGet
+	return r.New()
+}

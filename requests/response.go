@@ -190,3 +190,12 @@ type TaobaoTbkScVegasSendReportResponse struct {
 	} `json:"result"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkSpreadGetResponse struct {
+	Results []struct {
+		Content string `json:"content"`
+		ErrMsg  string `json:"err_msg"`
+	} `json:"results"`
+	TotalResults int    `json:"total_results"`
+	RequestID    string `json:"request_id"`
+}
