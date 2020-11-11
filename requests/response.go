@@ -280,3 +280,18 @@ type TaobaoJuItemsSearchResponse struct {
 	} `json:"result"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkCouponGetResponse struct {
+	Data struct {
+		CouponActivityID  string `json:"coupon_activity_id"`
+		CouponAmount      string `json:"coupon_amount"`
+		CouponEndTime     string `json:"coupon_end_time"`
+		CouponRemainCount int    `json:"coupon_remain_count"`
+		CouponSrcScene    int    `json:"coupon_src_scene"`
+		CouponStartFee    string `json:"coupon_start_fee"`
+		CouponStartTime   string `json:"coupon_start_time"`
+		CouponTotalCount  int    `json:"coupon_total_count"`
+		CouponType        int    `json:"coupon_type"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}

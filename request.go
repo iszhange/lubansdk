@@ -56,3 +56,8 @@ func TaobaoJuItemsSearchRequest() *requests.TaobaoJuItemsSearch {
 	var r requests.TaobaoJuItemsSearch
 	return r.New()
 }
+
+func TaobaoTbkCouponGetRequest() *requests.TaobaoTbkCouponGet {
+	var r requests.TaobaoTbkCouponGet
+	return r.New()
+}
