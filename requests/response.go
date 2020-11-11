@@ -118,6 +118,8 @@ type TaobaoTbkOrderDetailsGetResponse struct {
 			TotalCommissionRate                string `json:"total_commission_rate"`
 			TradeID                            string `json:"trade_id"`
 			TradeParentID                      string `json:"trade_parent_id"`
+			Unid                               string `json:"unid"`
+			LxRid                              string `json:"lx_rid"`
 		} `json:"results"`
 	} `json:"data"`
 	RequestID string `json:"request_id"`
@@ -472,4 +474,12 @@ type TaobaoTbkDgMaterialOptionalResponse struct {
 	} `json:"result_list"`
 	TotalResults int    `json:"total_results"`
 	RequestID    string `json:"request_id"`
+}
+
+type TaobaoTbkItemConvertResponse struct {
+	Results []struct {
+		ClickURL string `json:"click_url"`
+		NumIid   int64  `json:"num_iid"`
+	} `json:"results"`
+	RequestID string `json:"request_id"`
 }

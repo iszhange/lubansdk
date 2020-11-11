@@ -86,3 +86,8 @@ func TaobaoTbkDgMaterialOptionalRequest() *requests.TaobaoTbkDgMaterialOptional 
 	var r requests.TaobaoTbkDgMaterialOptional
 	return r.New()
 }
+
+func TaobaoTbkItemConvertRequest() *requests.TaobaoTbkItemConvert {
+	var r requests.TaobaoTbkItemConvert
+	return r.New()
+}
