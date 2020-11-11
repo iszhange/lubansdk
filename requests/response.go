@@ -199,3 +199,15 @@ type TaobaoTbkSpreadGetResponse struct {
 	TotalResults int    `json:"total_results"`
 	RequestID    string `json:"request_id"`
 }
+
+type TaobaoTbkActivityInfoGetResponse struct {
+	Data struct {
+		ClickURL       string `json:"click_url"`
+		MaterialOssURL string `json:"material_oss_url"`
+		PageEndTime    string `json:"page_end_time"`
+		PageName       string `json:"page_name"`
+		PageStartTime  string `json:"page_start_time"`
+		TerminalType   string `json:"terminal_type"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}

@@ -36,3 +36,8 @@ func TaobaoTbkSpreadGetRequest() *requests.TaobaoTbkSpreadGet {
 	var r requests.TaobaoTbkSpreadGet
 	return r.New()
 }
+
+func TaobaoTbkActivityInfoGetRequest() *requests.TaobaoTbkActivityInfoGet {
+	var r requests.TaobaoTbkActivityInfoGet
+	return r.New()
+}
