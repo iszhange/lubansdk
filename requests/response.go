@@ -499,3 +499,27 @@ type TaobaoTbkTpwdCreateResponse struct {
 	} `json:"data"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkDgPunishOrderGetResponse struct {
+	Result struct {
+		BizErrorCode int `json:"biz_error_code"`
+		Data         struct {
+			PageNo   int `json:"page_no"`
+			PageSize int `json:"page_size"`
+			Results  []struct {
+				PunishStatus      string `json:"punish_status"`
+				RelationID        int64  `json:"relation_id"`
+				SettleMonth       int    `json:"settle_month"`
+				TbTradeID         int64  `json:"tb_trade_id"`
+				TkAdzoneID        int64  `json:"tk_adzone_id"`
+				TkPubID           string `json:"tk_pub_id"`
+				TkSiteID          int    `json:"tk_site_id"`
+				TkTradeCreateTime string `json:"tk_trade_create_time"`
+				ViolationType     string `json:"violation_type"`
+			} `json:"results"`
+			TotalCount int `json:"total_count"`
+		} `json:"data"`
+		ResultCode int `json:"result_code"`
+	} `json:"result"`
+	RequestID string `json:"request_id"`
+}

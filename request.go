@@ -101,3 +101,8 @@ func TaobaoTbkTpwdCreateRequest() *requests.TaobaoTbkTpwdCreate {
 	var r requests.TaobaoTbkTpwdCreate
 	return r.New()
 }
+
+func TaobaoTbkDgPunishOrderGetRequest() *requests.TaobaoTbkDgPunishOrderGet {
+	var r requests.TaobaoTbkDgPunishOrderGet
+	return r.New()
+}
