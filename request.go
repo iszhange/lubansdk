@@ -51,3 +51,8 @@ func TaobaoTbkDgVegasTljInstanceReportRequest() *requests.TaobaoTbkDgVegasTljIns
 	var r requests.TaobaoTbkDgVegasTljInstanceReport
 	return r.New()
 }
+
+func TaobaoJuItemsSearchRequest() *requests.TaobaoJuItemsSearch {
+	var r requests.TaobaoJuItemsSearch
+	return r.New()
+}

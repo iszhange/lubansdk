@@ -245,3 +245,38 @@ type TaobaoTbkDgVegasTljInstanceReportResponse struct {
 	} `json:"result"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoJuItemsSearchResponse struct {
+	Result struct {
+		CurrentPage int `json:"current_page"`
+		ModelList   []struct {
+			ActPrice        string   `json:"act_price"`
+			CategoryName    string   `json:"category_name"`
+			ItemID          int64    `json:"item_id"`
+			ItemUspList     []string `json:"item_usp_list"`
+			JuID            int64    `json:"ju_id"`
+			OnlineEndTime   int64    `json:"online_end_time"`
+			OnlineStartTime int64    `json:"online_start_time"`
+			OrigPrice       string   `json:"orig_price"`
+			PayPostage      bool     `json:"pay_postage"`
+			PcURL           string   `json:"pc_url"`
+			PicURLForPC     string   `json:"pic_url_for_p_c"`
+			PicURLForWL     string   `json:"pic_url_for_w_l"`
+			PlatformID      int      `json:"platform_id"`
+			PriceUspList    []string `json:"price_usp_list"`
+			ShowEndTime     int64    `json:"show_end_time"`
+			ShowStartTime   int64    `json:"show_start_time"`
+			TbFirstCatID    int      `json:"tb_first_cat_id"`
+			Title           string   `json:"title"`
+			UspDescList     []string `json:"usp_desc_list"`
+			WapURL          string   `json:"wap_url"`
+		} `json:"model_list"`
+		PageSize    int  `json:"page_size"`
+		Success     bool `json:"success"`
+		TotalItem   int  `json:"total_item"`
+		TotalPage   int  `json:"total_page"`
+		TrackParams struct {
+		} `json:"track_params"`
+	} `json:"result"`
+	RequestID string `json:"request_id"`
+}
