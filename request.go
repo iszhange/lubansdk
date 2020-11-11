@@ -76,3 +76,8 @@ func TaobaoTbkDgOptimusPromotionRequest() *requests.TaobaoTbkDgOptimusPromotion 
 	var r requests.TaobaoTbkDgOptimusPromotion
 	return r.New()
 }
+
+func TaobaoTbkShopGetRequest() *requests.TaobaoTbkShopGet {
+	var r requests.TaobaoTbkShopGet
+	return r.New()
+}
