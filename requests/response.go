@@ -295,3 +295,15 @@ type TaobaoTbkCouponGetResponse struct {
 	} `json:"data"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkShopRecommendGetResponse struct {
+	Results []struct {
+		PictURL    string `json:"pict_url"`
+		SellerNick string `json:"seller_nick"`
+		ShopTitle  string `json:"shop_title"`
+		ShopType   string `json:"shop_type"`
+		ShopURL    string `json:"shop_url"`
+		UserID     int64  `json:"user_id"`
+	} `json:"results"`
+	RequestID string `json:"request_id"`
+}

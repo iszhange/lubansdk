@@ -61,3 +61,8 @@ func TaobaoTbkCouponGetRequest() *requests.TaobaoTbkCouponGet {
 	var r requests.TaobaoTbkCouponGet
 	return r.New()
 }
+
+func TaobaoTbkShopRecommendGetRequest() *requests.TaobaoTbkShopRecommendGet {
+	var r requests.TaobaoTbkShopRecommendGet
+	return r.New()
+}
