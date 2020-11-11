@@ -373,3 +373,37 @@ type TaobaoTbkDgOptimusMaterialResponse struct {
 	} `json:"result_list"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkDgOptimusPromotionResponse struct {
+	ResultList []struct {
+		ConditionType    string `json:"condition_type"`
+		DiscountType     string `json:"discount_type"`
+		DisplayEndTime   string `json:"display_end_time"`
+		DisplayStartTime string `json:"display_start_time"`
+		Nick             string `json:"nick"`
+		PromotionExtend  struct {
+			PromotionURL      string `json:"promotion_url"`
+			RecommendItemList []struct {
+				ItemID int64  `json:"item_id"`
+				URL    string `json:"url"`
+			} `json:"recommend_item_list"`
+			YoujiaCouponInfo struct {
+				ItemID string `json:"item_id"`
+				URL    string `json:"url"`
+			} `json:"youjia_coupon_info"`
+		} `json:"promotion_extend"`
+		PromotionList []struct {
+			EntryCondition     string `json:"entry_condition"`
+			EntryDiscount      string `json:"entry_discount"`
+			EntryUsedEndTime   string `json:"entry_used_end_time"`
+			EntryUsedStartTime string `json:"entry_used_start_time"`
+		} `json:"promotion_list"`
+		PromotionType  string `json:"promotion_type"`
+		RemainCount    int    `json:"remain_count"`
+		SellerID       string `json:"seller_id"`
+		ShopPictureURL string `json:"shop_picture_url"`
+		ShopTitle      string `json:"shop_title"`
+		TotalCount     int    `json:"total_count"`
+	} `json:"result_list"`
+	RequestID string `json:"request_id"`
+}

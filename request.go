@@ -71,3 +71,8 @@ func TaobaoTbkDgOptimusMaterialRequest() *requests.TaobaoTbkDgOptimusMaterial {
 	var r requests.TaobaoTbkDgOptimusMaterial
 	return r.New()
 }
+
+func TaobaoTbkDgOptimusPromotionRequest() *requests.TaobaoTbkDgOptimusPromotion {
+	var r requests.TaobaoTbkDgOptimusPromotion
+	return r.New()
+}
