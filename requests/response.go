@@ -224,3 +224,24 @@ type TaobaoTbkDgVegasTljCreateResponse struct {
 	} `json:"result"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkDgVegasTljInstanceReportResponse struct {
+	Result struct {
+		Model struct {
+			UnfreezeAmount      string `json:"unfreeze_amount"`
+			UnfreezeNum         int    `json:"unfreeze_num"`
+			RefundAmount        string `json:"refund_amount"`
+			RefundNum           int    `json:"refund_num"`
+			AlipayAmount        string `json:"alipay_amount"`
+			UseAmount           string `json:"use_amount"`
+			UseNum              int    `json:"use_num"`
+			WinAmount           string `json:"win_amount"`
+			WinNum              int    `json:"win_num"`
+			PreCommissionAmount string `json:"pre_commission_amount"`
+			FpRefundAmount      string `json:"fp_refund_amount"`
+			FpRefundNum         int    `json:"fp_refund_num"`
+		} `json:"model"`
+		Success bool `json:"success"`
+	} `json:"result"`
+	RequestID string `json:"request_id"`
+}

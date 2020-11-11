@@ -46,3 +46,8 @@ func TaobaoTbkDgVegasTljCreateRequest() *requests.TaobaoTbkDgVegasTljCreate {
 	var r requests.TaobaoTbkDgVegasTljCreate
 	return r.New()
 }
+
+func TaobaoTbkDgVegasTljInstanceReportRequest() *requests.TaobaoTbkDgVegasTljInstanceReport {
+	var r requests.TaobaoTbkDgVegasTljInstanceReport
+	return r.New()
+}
