@@ -483,3 +483,11 @@ type TaobaoTbkItemConvertResponse struct {
 	} `json:"results"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkShopConvertResponse struct {
+	Results []struct {
+		ClickURL string `json:"click_url"`
+		UserID   int    `json:"user_id"`
+	} `json:"results"`
+	RequestID string `json:"request_id"`
+}
