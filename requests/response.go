@@ -491,3 +491,11 @@ type TaobaoTbkShopConvertResponse struct {
 	} `json:"results"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkTpwdCreateResponse struct {
+	Data struct {
+		Model          string `json:"model"`
+		PasswordSimple string `json:"password_simple"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}

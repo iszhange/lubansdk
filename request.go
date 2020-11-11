@@ -96,3 +96,8 @@ func TaobaoTbkShopConvertRequest() *requests.TaobaoTbkShopConvert {
 	var r requests.TaobaoTbkShopConvert
 	return r.New()
 }
+
+func TaobaoTbkTpwdCreateRequest() *requests.TaobaoTbkTpwdCreate {
+	var r requests.TaobaoTbkTpwdCreate
+	return r.New()
+}
