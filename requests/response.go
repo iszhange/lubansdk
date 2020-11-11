@@ -307,3 +307,69 @@ type TaobaoTbkShopRecommendGetResponse struct {
 	} `json:"results"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkDgOptimusMaterialResponse struct {
+	IsDefault  string `json:"is_default"`
+	ResultList []struct {
+		CategoryID                 int      `json:"category_id"`
+		CategoryName               string   `json:"category_name"`
+		ClickURL                   string   `json:"click_url"`
+		CouponAmount               int      `json:"coupon_amount"`
+		CouponEndTime              string   `json:"coupon_end_time"`
+		CouponStartFee             string   `json:"coupon_start_fee"`
+		CouponStartTime            string   `json:"coupon_start_time"`
+		CouponTotalCount           int      `json:"coupon_total_count"`
+		ItemDescription            string   `json:"item_description"`
+		ItemID                     int64    `json:"item_id"`
+		LevelOneCategoryID         int      `json:"level_one_category_id"`
+		LevelOneCategoryName       string   `json:"level_one_category_name"`
+		PictURL                    string   `json:"pict_url"`
+		ReservePrice               string   `json:"reserve_price"`
+		SellerID                   int64    `json:"seller_id"`
+		ShopTitle                  string   `json:"shop_title"`
+		ShortTitle                 string   `json:"short_title"`
+		SmallImages                []string `json:"small_images"`
+		SubTitle                   string   `json:"sub_title"`
+		Title                      string   `json:"title"`
+		TqgOnlineEndTime           string   `json:"tqg_online_end_time"`
+		TqgOnlineStartTime         string   `json:"tqg_online_start_time"`
+		TqgSoldCount               int      `json:"tqg_sold_count"`
+		TqgTotalCount              int      `json:"tqg_total_count"`
+		UserType                   int      `json:"user_type"`
+		Volume                     int      `json:"volume"`
+		WhiteImage                 string   `json:"white_image"`
+		ZkFinalPrice               string   `json:"zk_final_price"`
+		CommissionRate             string   `json:"commission_rate"`
+		CouponClickURL             string   `json:"coupon_click_url"`
+		CouponRemainCount          int      `json:"coupon_remain_count"`
+		CouponShareURL             string   `json:"coupon_share_url"`
+		JhsPriceUspList            string   `json:"jhs_price_usp_list"`
+		JuPlayEndTime              int      `json:"ju_play_end_time"`
+		JuPlayStartTime            int      `json:"ju_play_start_time"`
+		Nick                       string   `json:"nick"`
+		JuOnlineEndTime            string   `json:"ju_online_end_time"`
+		JuOnlineStartTime          string   `json:"ju_online_start_time"`
+		MaochaoPlayConditions      string   `json:"maochao_play_conditions"`
+		MaochaoPlayDiscountType    string   `json:"maochao_play_discount_type"`
+		MaochaoPlayDiscounts       string   `json:"maochao_play_discounts"`
+		MaochaoPlayEndTime         string   `json:"maochao_play_end_time"`
+		MaochaoPlayFreePostFee     string   `json:"maochao_play_free_post_fee"`
+		MaochaoPlayStartTime       string   `json:"maochao_play_start_time"`
+		TmallPlayActivityEndTime   int      `json:"tmall_play_activity_end_time"`
+		TmallPlayActivityStartTime int      `json:"tmall_play_activity_start_time"`
+		FavoritesInfo              struct {
+			FavoritesList []struct {
+				FavoritesID    int    `json:"favorites_id"`
+				FavoritesTitle string `json:"favorites_title"`
+			} `json:"favorites_list"`
+			TotalCount int `json:"total_count"`
+		} `json:"favorites_info"`
+		XID                  string `json:"x_id"`
+		PresaleDeposit       string `json:"presale_deposit"`
+		PresaleEndTime       int    `json:"presale_end_time"`
+		PresaleStartTime     int    `json:"presale_start_time"`
+		PresaleTailEndTime   int    `json:"presale_tail_end_time"`
+		PresaleTailStartTime int    `json:"presale_tail_start_time"`
+	} `json:"result_list"`
+	RequestID string `json:"request_id"`
+}

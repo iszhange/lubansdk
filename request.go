@@ -66,3 +66,8 @@ func TaobaoTbkShopRecommendGetRequest() *requests.TaobaoTbkShopRecommendGet {
 	var r requests.TaobaoTbkShopRecommendGet
 	return r.New()
 }
+
+func TaobaoTbkDgOptimusMaterialRequest() *requests.TaobaoTbkDgOptimusMaterial {
+	var r requests.TaobaoTbkDgOptimusMaterial
+	return r.New()
+}
