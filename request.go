@@ -81,3 +81,8 @@ func TaobaoTbkShopGetRequest() *requests.TaobaoTbkShopGet {
 	var r requests.TaobaoTbkShopGet
 	return r.New()
 }
+
+func TaobaoTbkDgMaterialOptionalRequest() *requests.TaobaoTbkDgMaterialOptional {
+	var r requests.TaobaoTbkDgMaterialOptional
+	return r.New()
+}

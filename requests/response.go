@@ -420,3 +420,56 @@ type TaobaoTbkShopGetResponse struct {
 	TotalResults int    `json:"total_results"`
 	RequestID    string `json:"request_id"`
 }
+
+type TaobaoTbkDgMaterialOptionalResponse struct {
+	ResultList []struct {
+		CategoryID           int      `json:"category_id"`
+		CategoryName         string   `json:"category_name"`
+		CommissionRate       string   `json:"commission_rate"`
+		CommissionType       string   `json:"commission_type"`
+		CouponAmount         string   `json:"coupon_amount,omitempty"`
+		CouponEndTime        string   `json:"coupon_end_time,omitempty"`
+		CouponID             string   `json:"coupon_id"`
+		CouponInfo           string   `json:"coupon_info"`
+		CouponRemainCount    int      `json:"coupon_remain_count"`
+		CouponShareURL       string   `json:"coupon_share_url,omitempty"`
+		CouponStartFee       string   `json:"coupon_start_fee,omitempty"`
+		CouponStartTime      string   `json:"coupon_start_time,omitempty"`
+		CouponTotalCount     int      `json:"coupon_total_count"`
+		IncludeDxjh          string   `json:"include_dxjh"`
+		IncludeMkt           string   `json:"include_mkt"`
+		InfoDxjh             string   `json:"info_dxjh"`
+		ItemDescription      string   `json:"item_description"`
+		ItemID               int64    `json:"item_id"`
+		ItemURL              string   `json:"item_url"`
+		KuadianPromotionInfo string   `json:"kuadian_promotion_info,omitempty"`
+		LevelOneCategoryID   int      `json:"level_one_category_id"`
+		LevelOneCategoryName string   `json:"level_one_category_name"`
+		Nick                 string   `json:"nick"`
+		NumIid               int64    `json:"num_iid"`
+		PictURL              string   `json:"pict_url"`
+		PresaleDeposit       string   `json:"presale_deposit"`
+		PresaleEndTime       int      `json:"presale_end_time"`
+		PresaleStartTime     int      `json:"presale_start_time"`
+		PresaleTailEndTime   int      `json:"presale_tail_end_time"`
+		PresaleTailStartTime int      `json:"presale_tail_start_time"`
+		Provcity             string   `json:"provcity"`
+		RealPostFee          string   `json:"real_post_fee"`
+		ReservePrice         string   `json:"reserve_price"`
+		SellerID             int      `json:"seller_id"`
+		ShopDsr              int      `json:"shop_dsr"`
+		ShopTitle            string   `json:"shop_title"`
+		ShortTitle           string   `json:"short_title"`
+		SmallImages          []string `json:"small_images"`
+		Title                string   `json:"title"`
+		TkTotalCommi         string   `json:"tk_total_commi"`
+		TkTotalSales         string   `json:"tk_total_sales"`
+		URL                  string   `json:"url"`
+		UserType             int      `json:"user_type"`
+		Volume               int      `json:"volume"`
+		WhiteImage           string   `json:"white_image"`
+		ZkFinalPrice         string   `json:"zk_final_price"`
+	} `json:"result_list"`
+	TotalResults int    `json:"total_results"`
+	RequestID    string `json:"request_id"`
+}
