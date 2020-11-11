@@ -211,3 +211,16 @@ type TaobaoTbkActivityInfoGetResponse struct {
 	} `json:"data"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkDgVegasTljCreateResponse struct {
+	Result struct {
+		Model struct {
+			AvailableFee string `json:"available_fee"`
+			RightsID     string `json:"rights_id"`
+			SendURL      string `json:"send_url"`
+			VegasCode    string `json:"vegas_code"`
+		} `json:"model"`
+		Success bool `json:"success"`
+	} `json:"result"`
+	RequestID string `json:"request_id"`
+}

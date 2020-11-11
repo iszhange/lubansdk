@@ -41,3 +41,8 @@ func TaobaoTbkActivityInfoGetRequest() *requests.TaobaoTbkActivityInfoGet {
 	var r requests.TaobaoTbkActivityInfoGet
 	return r.New()
 }
+
+func TaobaoTbkDgVegasTljCreateRequest() *requests.TaobaoTbkDgVegasTljCreate {
+	var r requests.TaobaoTbkDgVegasTljCreate
+	return r.New()
+}
