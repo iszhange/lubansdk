@@ -575,16 +575,21 @@ type TaobaoTbkScInvitecodeGetResponse struct {
 }
 
 type TaobaoTopAuthTokenCreateResponse struct {
-	TokenResult TaobaoTopAuthTokenCreateTokenResult `json:"token_result"`
-	RequestID   string                              `json:"request_id"`
+	TokenResult TaobaoTopAuthTokenResult `json:"token_result"`
+	RequestID   string                   `json:"request_id"`
 }
 
-type TaobaoTopAuthTokenCreateResult struct {
+type TaobaoTopAuthTokenRefreshResponse struct {
+	TokenResult TaobaoTopAuthTokenResult `json:"token_result"`
+	RequestID   string                   `json:"request_id"`
+}
+
+type TaobaoTopAuthResult struct {
 	TokenResult string `json:"token_result"`
 	RequestID   string `json:"request_id"`
 }
 
-type TaobaoTopAuthTokenCreateTokenResult struct {
+type TaobaoTopAuthTokenResult struct {
 	W1ExpiresIn           int    `json:"w1_expires_in"`
 	RefreshTokenValidTime int64  `json:"refresh_token_valid_time"`
 	TaobaoUserNick        string `json:"taobao_user_nick"`

@@ -126,3 +126,8 @@ func TaobaoTopAuthTokenCreateRequest() *requests.TaobaoTopAuthTokenCreate {
 	var r requests.TaobaoTopAuthTokenCreate
 	return r.New()
 }
+
+func TaobaoTopAuthTokenRefreshRequest() *requests.TaobaoTopAuthTokenRefresh {
+	var r requests.TaobaoTopAuthTokenRefresh
+	return r.New()
+}

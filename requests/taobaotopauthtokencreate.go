@@ -20,7 +20,7 @@ func (o TaobaoTopAuthTokenCreate) New() *TaobaoTopAuthTokenCreate {
 }
 
 func (o TaobaoTopAuthTokenCreate) Result(data []byte) (TaobaoTopAuthTokenCreateResponse, error) {
-	var result TaobaoTopAuthTokenCreateResult
+	var result TaobaoTopAuthResult
 	err := json.Unmarshal(data, &result)
 	if err != nil {
 		return TaobaoTopAuthTokenCreateResponse{}, err
@@ -29,7 +29,7 @@ func (o TaobaoTopAuthTokenCreate) Result(data []byte) (TaobaoTopAuthTokenCreateR
 		return TaobaoTopAuthTokenCreateResponse{}, API_RESPONSE_ERROR
 	}
 
-	var token TaobaoTopAuthTokenCreateTokenResult
+	var token TaobaoTopAuthTokenResult
 	err = json.Unmarshal([]byte(result.TokenResult), &token)
 	if err != nil {
 		return TaobaoTopAuthTokenCreateResponse{}, err
