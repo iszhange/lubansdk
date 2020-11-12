@@ -116,3 +116,8 @@ func TaobaoTbkScPublisherInfoGetRequest() *requests.TaobaoTbkScPublisherInfoGet 
 	var r requests.TaobaoTbkScPublisherInfoGet
 	return r.New()
 }
+
+func TaobaoTbkScInvitecodeGetRequest() *requests.TaobaoTbkScInvitecodeGet {
+	var r requests.TaobaoTbkScInvitecodeGet
+	return r.New()
+}

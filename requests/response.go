@@ -566,3 +566,10 @@ type TaobaoTbkScPublisherInfoGetResponse struct {
 	} `json:"data"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkScInvitecodeGetResponse struct {
+	Data struct {
+		InviterCode string `json:"inviter_code"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}
