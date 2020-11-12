@@ -106,3 +106,8 @@ func TaobaoTbkDgPunishOrderGetRequest() *requests.TaobaoTbkDgPunishOrderGet {
 	var r requests.TaobaoTbkDgPunishOrderGet
 	return r.New()
 }
+
+func TaobaoTbkScPublisherInfoSaveRequest() *requests.TaobaoTbkScPublisherInfoSave {
+	var r requests.TaobaoTbkScPublisherInfoSave
+	return r.New()
+}

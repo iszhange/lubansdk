@@ -523,3 +523,12 @@ type TaobaoTbkDgPunishOrderGetResponse struct {
 	} `json:"result"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkScPublisherInfoSaveResponse struct {
+	Data struct {
+		AccountName string `json:"account_name"`
+		Desc        string `json:"desc"`
+		RelationID  int64  `json:"relation_id"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}
