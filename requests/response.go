@@ -529,6 +529,7 @@ type TaobaoTbkScPublisherInfoSaveResponse struct {
 		AccountName string `json:"account_name"`
 		Desc        string `json:"desc"`
 		RelationID  int64  `json:"relation_id"`
+		SpecialID   int64  `json:"special_id"`
 	} `json:"data"`
 	RequestID string `json:"request_id"`
 }
