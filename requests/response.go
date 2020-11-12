@@ -533,3 +533,36 @@ type TaobaoTbkScPublisherInfoSaveResponse struct {
 	} `json:"data"`
 	RequestID string `json:"request_id"`
 }
+
+type TaobaoTbkScPublisherInfoGetResponse struct {
+	Data struct {
+		InviterList []struct {
+			RelationApp  string `json:"relation_app"`
+			CreateDate   string `json:"create_date"`
+			AccountName  string `json:"account_name"`
+			RealName     string `json:"real_name"`
+			RelationID   int    `json:"relation_id"`
+			OfflineScene string `json:"offline_scene"`
+			OnlineScene  string `json:"online_scene"`
+			Note         string `json:"note"`
+			RootPid      string `json:"root_pid"`
+			Rtag         string `json:"rtag"`
+			OfflineInfo  struct {
+				ShopName        string `json:"shop_name"`
+				ShopType        string `json:"shop_type"`
+				PhoneNumber     string `json:"phone_number"`
+				DetailAddress   string `json:"detail_address"`
+				Location        string `json:"location"`
+				ShopCertifyType string `json:"shop_certify_type"`
+				CertifyNumber   string `json:"certify_number"`
+				Career          string `json:"career"`
+			} `json:"offline_info"`
+			SpecialID    int    `json:"special_id"`
+			PunishStatus string `json:"punish_status"`
+			ExternalID   string `json:"external_id"`
+		} `json:"inviter_list"`
+		RootPidChannelList []string `json:"root_pid_channel_list"`
+		TotalCount         int      `json:"total_count"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}

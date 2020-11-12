@@ -111,3 +111,8 @@ func TaobaoTbkScPublisherInfoSaveRequest() *requests.TaobaoTbkScPublisherInfoSav
 	var r requests.TaobaoTbkScPublisherInfoSave
 	return r.New()
 }
+
+func TaobaoTbkScPublisherInfoGetRequest() *requests.TaobaoTbkScPublisherInfoGet {
+	var r requests.TaobaoTbkScPublisherInfoGet
+	return r.New()
+}
