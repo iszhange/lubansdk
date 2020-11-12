@@ -121,3 +121,8 @@ func TaobaoTbkScInvitecodeGetRequest() *requests.TaobaoTbkScInvitecodeGet {
 	var r requests.TaobaoTbkScInvitecodeGet
 	return r.New()
 }
+
+func TaobaoTopAuthTokenCreateRequest() *requests.TaobaoTopAuthTokenCreate {
+	var r requests.TaobaoTopAuthTokenCreate
+	return r.New()
+}

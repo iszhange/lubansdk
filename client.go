@@ -50,7 +50,7 @@ type Client struct {
 
 func New() *Client {
 	c := new(Client)
-	c.Gateway = HTTP_GATEWAY
+	c.Gateway = HTTPS_GATEWAY
 	c.SignMethod = MD5
 	c.Format = JSON
 	c.simplify = true
