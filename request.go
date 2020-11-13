@@ -131,3 +131,8 @@ func TaobaoTopAuthTokenRefreshRequest() *requests.TaobaoTopAuthTokenRefresh {
 	var r requests.TaobaoTopAuthTokenRefresh
 	return r.New()
 }
+
+func TaobaoTbkItemClickExtractRequest() *requests.TaobaoTbkItemClickExtract {
+	var r requests.TaobaoTbkItemClickExtract
+	return r.New()
+}

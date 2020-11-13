@@ -609,3 +609,9 @@ type TaobaoTopAuthTokenResult struct {
 	TaobaoUserID          string `json:"taobao_user_id"`
 	ExpiresIn             int    `json:"expires_in"`
 }
+
+type TaobaoTbkItemClickExtractResponse struct {
+	ItemID    string `json:"item_id"`
+	OpenIid   string `json:"open_iid"`
+	RequestID string `json:"request_id"`
+}
