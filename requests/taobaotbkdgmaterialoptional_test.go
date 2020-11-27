@@ -2,8 +2,9 @@ package requests_test
 
 import (
 	"fmt"
-	"lubantop"
 	"testing"
+
+	"github.com/iszhange/lubantop"
 )
 
 func TestTaobaoTbkDgMaterialOptional(t *testing.T) {

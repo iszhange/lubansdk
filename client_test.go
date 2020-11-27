@@ -2,9 +2,10 @@ package lubantop_test
 
 import (
 	"log"
-	"lubantop"
-	"lubantop/requests"
 	"testing"
+
+	"github.com/iszhange/lubantop"
+	"github.com/iszhange/lubantop/requests"
 )
 
 func TestClient(t *testing.T) {

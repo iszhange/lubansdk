@@ -9,12 +9,13 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
-	"lubantop/requests"
 	"net/http"
 	"net/url"
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/iszhange/lubantop/requests"
 )
 
 const (

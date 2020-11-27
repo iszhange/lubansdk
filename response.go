@@ -2,7 +2,8 @@ package lubantop
 
 import (
 	"encoding/json"
-	"lubantop/requests"
+
+	"github.com/iszhange/lubantop/requests"
 )
 
 func ErrorResponse(data []byte) (requests.ErrorResponse, error) {

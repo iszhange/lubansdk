@@ -1,6 +1,6 @@
 package lubantop
 
-import "lubantop/requests"
+import "github.com/iszhange/lubantop/requests"
 
 func TaobaoTbkItemInfoGetRequest() *requests.TaobaoTbkItemInfoGet {
 	var r requests.TaobaoTbkItemInfoGet
