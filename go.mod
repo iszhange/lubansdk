@@ -1,3 +1,3 @@
-module github.com/iszhange/lubantop
+module github.com/iszhange/lubansdk
 
 go 1.14
