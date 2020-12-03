@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 )
 
-// 淘宝客-公用-阿里妈妈推广券详情查询
-// Link: https://open.taobao.com/api.htm?docId=31106&docType=2&scopeId=16189
+// 淘宝客-推广者-物料精选
+// Link: https://open.taobao.com/api.htm?docId=33947&docType=2
 // Author: zhange
 // Email: kenphp@yeah.net
 
@@ -40,7 +40,7 @@ func (o *TaobaoTbkDgOptimusMaterial) SetPageNo(value int) {
 	o.params["page_no"] = value
 }
 
-func (o *TaobaoTbkDgOptimusMaterial) SetAdzoneId(value int) {
+func (o *TaobaoTbkDgOptimusMaterial) SetAdzoneId(value string) {
 	o.params["adzone_id"] = value
 }
 
@@ -68,7 +68,7 @@ func (o *TaobaoTbkDgOptimusMaterial) SetContentSource(value string) {
 	o.params["content_source"] = value
 }
 
-func (o *TaobaoTbkDgOptimusMaterial) SetItemId(value int) {
+func (o *TaobaoTbkDgOptimusMaterial) SetItemId(value string) {
 	o.params["item_id"] = value
 }
 
