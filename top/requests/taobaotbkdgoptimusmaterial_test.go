@@ -13,8 +13,8 @@ func TestTaobaoTbkDgOptimusMaterial(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkDgOptimusMaterialRequest()
-	req.SetAdzoneId("107356100348")
-	req.SetMaterialId(28017)
+	req.SetParam("adzone_id", "107356100348")
+	req.SetParam("material_id", "28017")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

@@ -32,44 +32,8 @@ func (o TaobaoTbkOrderDetailsGet) Result(data []byte) (TaobaoTbkOrderDetailsGetR
 	return result, nil
 }
 
-func (o *TaobaoTbkOrderDetailsGet) SetQueryType(value int) {
-	o.params["query_type"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetOrderScene(value int) {
-	o.params["order_scene"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetPositionIndex(value string) {
-	o.params["position_index"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetMemberType(value int) {
-	o.params["member_type"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetTkStatus(value int) {
-	o.params["tk_status"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetStartTime(value string) {
-	o.params["start_time"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetEndTime(value string) {
-	o.params["end_time"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetJumpType(value int) {
-	o.params["jump_type"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetPageNo(value int) {
-	o.params["page_no"] = value
-}
-
-func (o *TaobaoTbkOrderDetailsGet) SetPageSize(value int) {
-	o.params["page_size"] = value
+func (o *TaobaoTbkOrderDetailsGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkOrderDetailsGet) GetMethod() string {

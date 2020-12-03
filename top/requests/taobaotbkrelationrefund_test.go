@@ -13,12 +13,12 @@ func TestTaobaoTbkRelationRefund(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkRelationRefundRequest()
-	req.SetSearchType(3)
-	req.SetRefundType(0)
-	req.SetBizType(1)
-	req.SetStartTime("2020-11-09 00:00:00")
-	req.SetPageNo(1)
-	req.SetPageSize(3)
+	req.SetParam("search_type", "3")
+	req.SetParam("refund_type", "0")
+	req.SetParam("biz_type", "1")
+	req.SetParam("start_time", "2020-11-09 00:00:00")
+	req.SetParam("page_no", "1")
+	req.SetParam("page_size", "3")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

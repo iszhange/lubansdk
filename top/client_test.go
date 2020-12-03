@@ -15,9 +15,9 @@ func TestClient(t *testing.T) {
 
 	for i := 0; i < 150; i++ {
 		req := top.TaobaoTbkOrderDetailsGetRequest()
-		req.SetStartTime("2020-05-27 11:00:00")
-		req.SetEndTime("2020-05-27 11:10:00")
-		req.SetOrderScene(2)
+		req.SetParam("start_time", "2020-05-27 11:00:00")
+		req.SetParam("end_time", "2020-05-27 11:10:00")
+		req.SetParam("order_scene", "2")
 		body, err := c.Exec(req)
 		if err != nil {
 			log.Fatalln(err)

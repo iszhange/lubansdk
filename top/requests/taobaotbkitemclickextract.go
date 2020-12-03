@@ -32,8 +32,8 @@ func (o TaobaoTbkItemClickExtract) Result(data []byte) (TaobaoTbkItemClickExtrac
 	return result, nil
 }
 
-func (o *TaobaoTbkItemClickExtract) SetClickUrl(value string) {
-	o.params["click_url"] = value
+func (o *TaobaoTbkItemClickExtract) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkItemClickExtract) GetMethod() string {

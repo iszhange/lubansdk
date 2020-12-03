@@ -32,48 +32,8 @@ func (o TaobaoTbkDgOptimusMaterial) Result(data []byte) (TaobaoTbkDgOptimusMater
 	return result, nil
 }
 
-func (o *TaobaoTbkDgOptimusMaterial) SetPageSize(value int) {
-	o.params["page_size"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetPageNo(value int) {
-	o.params["page_no"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetAdzoneId(value string) {
-	o.params["adzone_id"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetMaterialId(value int) {
-	o.params["material_id"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetDeviceValue(value string) {
-	o.params["device_value"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetDeviceEncrypt(value string) {
-	o.params["device_encrypt"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetDeviceType(value string) {
-	o.params["device_type"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetContentId(value int) {
-	o.params["content_id"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetContentSource(value string) {
-	o.params["content_source"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetItemId(value string) {
-	o.params["item_id"] = value
-}
-
-func (o *TaobaoTbkDgOptimusMaterial) SetFavoritesId(value string) {
-	o.params["favorites_id"] = value
+func (o *TaobaoTbkDgOptimusMaterial) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkDgOptimusMaterial) GetMethod() string {

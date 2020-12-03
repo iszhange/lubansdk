@@ -13,10 +13,10 @@ func TestTaobaoTbkItemConvert(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkItemConvertRequest()
-	req.SetFields("num_iid,click_url")
-	req.SetNumIids("627045406961")
-	req.SetAdzoneId("107356100348")
-	req.SetUnid("111")
+	req.SetParam("fields", "num_iid,click_url")
+	req.SetParam("num_iids", "627045406961")
+	req.SetParam("adzone_id", "107356100348")
+	req.SetParam("unid", "111")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

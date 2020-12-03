@@ -32,32 +32,8 @@ func (o TaobaoTbkScPublisherInfoSave) Result(data []byte) (TaobaoTbkScPublisherI
 	return result, nil
 }
 
-func (o *TaobaoTbkScPublisherInfoSave) SetRelationFrom(value string) {
-	o.params["relation_from"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoSave) SetOfflineScene(value string) {
-	o.params["offline_scene"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoSave) SetOnlineScene(value string) {
-	o.params["online_scene"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoSave) SetInviterCode(value string) {
-	o.params["inviter_code"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoSave) SetInfoType(value int) {
-	o.params["info_type"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoSave) SetNote(value string) {
-	o.params["note"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoSave) SetRegisterInfo(value string) {
-	o.params["register_info"] = value
+func (o *TaobaoTbkScPublisherInfoSave) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkScPublisherInfoSave) GetMethod() string {

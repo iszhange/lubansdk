@@ -1,3 +1,3 @@
 package requests
 
-type Parameter map[string]interface{}
+type Parameter map[string]string

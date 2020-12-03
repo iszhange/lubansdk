@@ -13,9 +13,9 @@ func TestTaobaoTbkDgMaterialOptional(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkDgMaterialOptionalRequest()
-	req.SetQ("上衣")
-	req.SetMaterialId(17004)
-	req.SetAdzoneId("107356100348")
+	req.SetParam("q", "上衣")
+	req.SetParam("material_id", "17004")
+	req.SetParam("adzone_id", "107356100348")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

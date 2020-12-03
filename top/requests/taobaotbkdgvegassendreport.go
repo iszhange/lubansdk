@@ -32,24 +32,8 @@ func (o TaobaoTbkDgVegasSendReport) Result(data []byte) (TaobaoTbkDgVegasSendRep
 	return result, nil
 }
 
-func (o *TaobaoTbkDgVegasSendReport) SetBizDate(value string) {
-	o.params["biz_date"] = value
-}
-
-func (o *TaobaoTbkDgVegasSendReport) SetRelationId(value int) {
-	o.params["relation_id"] = value
-}
-
-func (o *TaobaoTbkDgVegasSendReport) SetActivityId(value int) {
-	o.params["activity_id"] = value
-}
-
-func (o *TaobaoTbkDgVegasSendReport) SetPageNo(value int) {
-	o.params["page_no"] = value
-}
-
-func (o *TaobaoTbkDgVegasSendReport) SetPageSize(value int) {
-	o.params["page_size"] = value
+func (o *TaobaoTbkDgVegasSendReport) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkDgVegasSendReport) GetMethod() string {

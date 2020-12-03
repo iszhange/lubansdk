@@ -13,7 +13,7 @@ func TestTaobaoTbkDgPunishOrderGet(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkDgPunishOrderGetRequest()
-	req.SetStartTime("2020-11-01 00:00:00")
+	req.SetParam("start_time", "2020-11-01 00:00:00")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

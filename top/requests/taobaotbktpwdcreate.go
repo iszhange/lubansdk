@@ -32,20 +32,8 @@ func (o TaobaoTbkTpwdCreate) Result(data []byte) (TaobaoTbkTpwdCreateResponse, e
 	return result, nil
 }
 
-func (o *TaobaoTbkTpwdCreate) SetUserId(value string) {
-	o.params["user_id"] = value
-}
-
-func (o *TaobaoTbkTpwdCreate) SetText(value string) {
-	o.params["text"] = value
-}
-
-func (o *TaobaoTbkTpwdCreate) SetUrl(value string) {
-	o.params["url"] = value
-}
-
-func (o *TaobaoTbkTpwdCreate) SetLogo(value bool) {
-	o.params["logo"] = value
+func (o *TaobaoTbkTpwdCreate) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkTpwdCreate) GetMethod() string {

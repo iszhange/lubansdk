@@ -14,8 +14,8 @@ func TestTaobaoTbkScPublisherInfoGet(t *testing.T) {
 	c.Session = "6200326740fa017c194a82bc0b2fc7fee2ZZ5754c3af44d1076725086"
 
 	req := top.TaobaoTbkScPublisherInfoGetRequest()
-	req.SetInfoType(1)
-	req.SetRelationApp("common")
+	req.SetParam("info_type", "1")
+	req.SetParam("relation_app", "common")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

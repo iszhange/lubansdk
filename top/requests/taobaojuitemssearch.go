@@ -32,32 +32,8 @@ func (o TaobaoJuItemsSearch) Result(data []byte) (TaobaoJuItemsSearchResponse, e
 	return result, nil
 }
 
-func (o *TaobaoJuItemsSearch) SetCurrentPage(value int) {
-	o.params["current_page"] = value
-}
-
-func (o *TaobaoJuItemsSearch) SetPageSize(value int) {
-	o.params["page_size"] = value
-}
-
-func (o *TaobaoJuItemsSearch) SetPid(value string) {
-	o.params["pid"] = value
-}
-
-func (o *TaobaoJuItemsSearch) SetPostage(value bool) {
-	o.params["postage"] = value
-}
-
-func (o *TaobaoJuItemsSearch) SetStatus(value int) {
-	o.params["status"] = value
-}
-
-func (o *TaobaoJuItemsSearch) SetTaobaoCategoryId(value int) {
-	o.params["taobao_category_id"] = value
-}
-
-func (o *TaobaoJuItemsSearch) SetWord(value string) {
-	o.params["word"] = value
+func (o *TaobaoJuItemsSearch) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoJuItemsSearch) GetMethod() string {

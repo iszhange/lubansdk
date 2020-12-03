@@ -32,8 +32,8 @@ func (o TaobaoTbkSpreadGet) Result(data []byte) (TaobaoTbkSpreadGetResponse, err
 	return result, nil
 }
 
-func (o *TaobaoTbkSpreadGet) SetUrl(value string) {
-	o.params = append(o.params, Parameter{"url": value})
+func (o *TaobaoTbkSpreadGet) SetParam(key, value string) {
+	o.params = append(o.params, Parameter{key: value})
 }
 
 func (o *TaobaoTbkSpreadGet) GetMethod() string {

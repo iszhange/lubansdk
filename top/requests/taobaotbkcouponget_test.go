@@ -13,8 +13,8 @@ func TestTaobaoTbkCouponGet(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkCouponGetRequest()
-	req.SetItemId("619028455482")
-	req.SetActivityId("1f7f93f7473f45bcab47aede5b12af3f")
+	req.SetParam("item_id", "619028455482")
+	req.SetParam("activity_id", "1f7f93f7473f45bcab47aede5b12af3f")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

@@ -13,9 +13,9 @@ func TestTaobaoTbkOrderDetailsGet(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkOrderDetailsGetRequest()
-	req.SetStartTime("2020-11-09 00:00:00")
-	req.SetEndTime("2020-11-09 00:10:00")
-	req.SetOrderScene(2)
+	req.SetParam("start_time", "2020-11-09 00:00:00")
+	req.SetParam("end_time", "2020-11-09 00:10:00")
+	req.SetParam("order_scene", "2")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

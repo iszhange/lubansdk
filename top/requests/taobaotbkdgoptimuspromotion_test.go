@@ -13,8 +13,8 @@ func TestTaobaoTbkDgOptimusPromotion(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkDgOptimusPromotionRequest()
-	req.SetAdzoneId("107356100348")
-	req.SetPromotionId(37104)
+	req.SetParam("adzone_id", "107356100348")
+	req.SetParam("promotion_id", "37104")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

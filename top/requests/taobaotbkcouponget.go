@@ -32,16 +32,8 @@ func (o TaobaoTbkCouponGet) Result(data []byte) (TaobaoTbkCouponGetResponse, err
 	return result, nil
 }
 
-func (o *TaobaoTbkCouponGet) SetMe(value string) {
-	o.params["me"] = value
-}
-
-func (o *TaobaoTbkCouponGet) SetItemId(value string) {
-	o.params["item_id"] = value
-}
-
-func (o *TaobaoTbkCouponGet) SetActivityId(value string) {
-	o.params["activity_id"] = value
+func (o *TaobaoTbkCouponGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkCouponGet) GetMethod() string {

@@ -32,16 +32,8 @@ func (o TaobaoTbkScInvitecodeGet) Result(data []byte) (TaobaoTbkScInvitecodeGetR
 	return result, nil
 }
 
-func (o *TaobaoTbkScInvitecodeGet) SetRelationId(value string) {
-	o.params["relation_id"] = value
-}
-
-func (o *TaobaoTbkScInvitecodeGet) SetRelationApp(value string) {
-	o.params["relation_app"] = value
-}
-
-func (o *TaobaoTbkScInvitecodeGet) SetCodeType(value int) {
-	o.params["code_type"] = value
+func (o *TaobaoTbkScInvitecodeGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkScInvitecodeGet) GetMethod() string {

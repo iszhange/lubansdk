@@ -14,8 +14,8 @@ func TestTaobaoTbkScVegasSendReport(t *testing.T) {
 	c.Session = "6202a07eb63bfbbdf74dcdd7a74219930d4046114b8718a527712929"
 
 	req := top.TaobaoTbkScVegasSendReportRequest()
-	req.SetBizDate("20201101")
-	req.SetActivityId(1306)
+	req.SetParam("biz_date", "20201101")
+	req.SetParam("activity_id", "1306")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

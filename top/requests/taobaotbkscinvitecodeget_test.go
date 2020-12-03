@@ -14,8 +14,8 @@ func TestTaobaoTbkScInvitecodeGet(t *testing.T) {
 	c.Session = "6200326740fa017c194a82bc0b2fc7fee2ZZ5754c3af44d1076725086"
 
 	req := top.TaobaoTbkScInvitecodeGetRequest()
-	req.SetRelationApp("common")
-	req.SetCodeType(1)
+	req.SetParam("relation_app", "common")
+	req.SetParam("code_type", "1")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

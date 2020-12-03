@@ -14,8 +14,8 @@ func TestTaobaoTbkScPublisherInfoSave(t *testing.T) {
 	c.Session = "6202706416584egi88b06e33e463787f04b30dbd2ce59872418252546"
 
 	req := top.TaobaoTbkScPublisherInfoSaveRequest()
-	req.SetInviterCode("8W46PX")
-	req.SetInfoType(1)
+	req.SetParam("inviter_code", "8W46PX")
+	req.SetParam("info_type", "1")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

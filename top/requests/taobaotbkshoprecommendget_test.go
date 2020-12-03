@@ -13,10 +13,10 @@ func TestTaobaoTbkShopRecommendGet(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkShopRecommendGetRequest()
-	req.SetFields("user_id,shop_title,shop_type,seller_nick,pict_url,shop_url")
-	req.SetUserId(92688455)
-	req.SetCount(4)
-	req.SetPlatform(1)
+	req.SetParam("fields", "user_id,shop_title,shop_type,seller_nick,pict_url,shop_url")
+	req.SetParam("user_id", "92688455")
+	req.SetParam("count", "4")
+	req.SetParam("platform", "1")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

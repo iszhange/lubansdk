@@ -32,24 +32,8 @@ func (o TaobaoTbkShopConvert) Result(data []byte) (TaobaoTbkShopConvertResponse,
 	return result, nil
 }
 
-func (o *TaobaoTbkShopConvert) SetFields(value string) {
-	o.params["fields"] = value
-}
-
-func (o *TaobaoTbkShopConvert) SetUserIds(value string) {
-	o.params["user_ids"] = value
-}
-
-func (o *TaobaoTbkShopConvert) SetAdzoneId(value string) {
-	o.params["adzone_id"] = value
-}
-
-func (o *TaobaoTbkShopConvert) SetPlatform(value int) {
-	o.params["platform"] = value
-}
-
-func (o *TaobaoTbkShopConvert) SetUnid(value string) {
-	o.params["unid"] = value
+func (o *TaobaoTbkShopConvert) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkShopConvert) GetMethod() string {

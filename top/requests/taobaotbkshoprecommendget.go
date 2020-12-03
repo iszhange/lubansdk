@@ -32,20 +32,8 @@ func (o TaobaoTbkShopRecommendGet) Result(data []byte) (TaobaoTbkShopRecommendGe
 	return result, nil
 }
 
-func (o *TaobaoTbkShopRecommendGet) SetFields(value string) {
-	o.params["fields"] = value
-}
-
-func (o *TaobaoTbkShopRecommendGet) SetUserId(value int) {
-	o.params["user_id"] = value
-}
-
-func (o *TaobaoTbkShopRecommendGet) SetCount(value int) {
-	o.params["count"] = value
-}
-
-func (o *TaobaoTbkShopRecommendGet) SetPlatform(value int) {
-	o.params["platform"] = value
+func (o *TaobaoTbkShopRecommendGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkShopRecommendGet) GetMethod() string {

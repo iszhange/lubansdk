@@ -32,16 +32,8 @@ func (o TaobaoTbkItemInfoGet) Result(data []byte) (TaobaoTbkItemInfoGetResponse,
 	return result, nil
 }
 
-func (o *TaobaoTbkItemInfoGet) SetNumIids(value string) {
-	o.params["num_iids"] = value
-}
-
-func (o *TaobaoTbkItemInfoGet) SetPlatform(value int) {
-	o.params["platform"] = value
-}
-
-func (o *TaobaoTbkItemInfoGet) SetIp(value string) {
-	o.params["ip"] = value
+func (o *TaobaoTbkItemInfoGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkItemInfoGet) GetMethod() string {

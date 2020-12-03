@@ -32,36 +32,8 @@ func (o TaobaoTbkDgPunishOrderGet) Result(data []byte) (TaobaoTbkDgPunishOrderGe
 	return result, nil
 }
 
-func (o *TaobaoTbkDgPunishOrderGet) SetSiteId(value string) {
-	o.params["site_id"] = value
-}
-
-func (o *TaobaoTbkDgPunishOrderGet) SetSpan(value string) {
-	o.params["span"] = value
-}
-
-func (o *TaobaoTbkDgPunishOrderGet) SetRelationId(value string) {
-	o.params["relation_id"] = value
-}
-
-func (o *TaobaoTbkDgPunishOrderGet) SetTbTradeId(value string) {
-	o.params["tb_trade_id"] = value
-}
-
-func (o *TaobaoTbkDgPunishOrderGet) SetPageSize(value int) {
-	o.params["page_size"] = value
-}
-
-func (o *TaobaoTbkDgPunishOrderGet) SetPageNo(value int) {
-	o.params["page_no"] = value
-}
-
-func (o *TaobaoTbkDgPunishOrderGet) SetStartTime(value string) {
-	o.params["start_time"] = value
-}
-
-func (o *TaobaoTbkDgPunishOrderGet) SetAdzoneId(value string) {
-	o.params["adzone_id"] = value
+func (o *TaobaoTbkDgPunishOrderGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkDgPunishOrderGet) GetMethod() string {

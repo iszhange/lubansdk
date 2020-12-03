@@ -13,7 +13,7 @@ func TestTaobaoTbkDgVegasSendStatus(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkDgVegasSendStatusRequest()
-	req.SetRelationId("532835060")
+	req.SetParam("relation_id", "532835060")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

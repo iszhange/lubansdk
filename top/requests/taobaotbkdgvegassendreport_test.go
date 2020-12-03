@@ -13,8 +13,8 @@ func TestTaobaoTbkDgVegasSendReport(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkDgVegasSendReportRequest()
-	req.SetBizDate("20201101")
-	req.SetActivityId(1306)
+	req.SetParam("biz_date", "20201101")
+	req.SetParam("activity_id", "1306")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

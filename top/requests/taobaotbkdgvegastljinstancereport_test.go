@@ -13,7 +13,7 @@ func TestTaobaoTbkDgVegasTljInstanceReport(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkDgVegasTljInstanceReportRequest()
-	req.SetRightsId("DsMfpz1IsB8nINjJqvFNffJJ13fR4+WO")
+	req.SetParam("rights_id", "DsMfpz1IsB8nINjJqvFNffJJ13fR4+WO")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

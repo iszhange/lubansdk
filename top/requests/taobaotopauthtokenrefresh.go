@@ -42,8 +42,8 @@ func (o TaobaoTopAuthTokenRefresh) Result(data []byte) (TaobaoTopAuthTokenRefres
 	return response, nil
 }
 
-func (o *TaobaoTopAuthTokenRefresh) SetRefreshToken(value string) {
-	o.params["refresh_token"] = value
+func (o *TaobaoTopAuthTokenRefresh) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTopAuthTokenRefresh) GetMethod() string {

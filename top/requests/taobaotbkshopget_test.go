@@ -13,8 +13,8 @@ func TestTaobaoTbkShopGet(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkShopGetRequest()
-	req.SetFields("user_id,shop_title,shop_type,seller_nick,pict_url,shop_url")
-	req.SetQ("手机")
+	req.SetParam("fields", "user_id,shop_title,shop_type,seller_nick,pict_url,shop_url")
+	req.SetParam("q", "手机")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

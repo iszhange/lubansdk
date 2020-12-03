@@ -42,12 +42,8 @@ func (o TaobaoTopAuthTokenCreate) Result(data []byte) (TaobaoTopAuthTokenCreateR
 	return response, nil
 }
 
-func (o *TaobaoTopAuthTokenCreate) SetCode(value string) {
-	o.params["code"] = value
-}
-
-func (o *TaobaoTopAuthTokenCreate) SetUuid(value string) {
-	o.params["uuid"] = value
+func (o *TaobaoTopAuthTokenCreate) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTopAuthTokenCreate) GetMethod() string {

@@ -32,32 +32,8 @@ func (o TaobaoTbkScPublisherInfoGet) Result(data []byte) (TaobaoTbkScPublisherIn
 	return result, nil
 }
 
-func (o *TaobaoTbkScPublisherInfoGet) SetInfoType(value int) {
-	o.params["info_type"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoGet) SetRelationId(value string) {
-	o.params["relation_id"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoGet) SetPageNo(value int) {
-	o.params["page_no"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoGet) SetPageSize(value int) {
-	o.params["page_size"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoGet) SetRelationApp(value string) {
-	o.params["relation_app"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoGet) SetSpecialId(value string) {
-	o.params["special_id"] = value
-}
-
-func (o *TaobaoTbkScPublisherInfoGet) SetExternalId(value string) {
-	o.params["external_id"] = value
+func (o *TaobaoTbkScPublisherInfoGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkScPublisherInfoGet) GetMethod() string {

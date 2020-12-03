@@ -32,20 +32,8 @@ func (o TaobaoTbkDgOptimusPromotion) Result(data []byte) (TaobaoTbkDgOptimusProm
 	return result, nil
 }
 
-func (o *TaobaoTbkDgOptimusPromotion) SetPageSize(value int) {
-	o.params["page_size"] = value
-}
-
-func (o *TaobaoTbkDgOptimusPromotion) SetPageNum(value int) {
-	o.params["page_num"] = value
-}
-
-func (o *TaobaoTbkDgOptimusPromotion) SetAdzoneId(value string) {
-	o.params["adzone_id"] = value
-}
-
-func (o *TaobaoTbkDgOptimusPromotion) SetPromotionId(value int) {
-	o.params["promotion_id"] = value
+func (o *TaobaoTbkDgOptimusPromotion) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkDgOptimusPromotion) GetMethod() string {

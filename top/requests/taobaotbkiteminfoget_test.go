@@ -13,7 +13,7 @@ func TestTaobaoTbkItemInfoGet(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkItemInfoGetRequest()
-	req.SetNumIids("627736963005")
+	req.SetParam("num_iids", "627736963005")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

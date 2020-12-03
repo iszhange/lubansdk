@@ -32,28 +32,8 @@ func (o TaobaoTbkRelationRefund) Result(data []byte) (TaobaoTbkRelationRefundRes
 	return result, nil
 }
 
-func (o *TaobaoTbkRelationRefund) SetBizType(value int) {
-	o.params["biz_type"] = value
-}
-
-func (o *TaobaoTbkRelationRefund) SetStartTime(value string) {
-	o.params["start_time"] = value
-}
-
-func (o *TaobaoTbkRelationRefund) SetRefundType(value int) {
-	o.params["refund_type"] = value
-}
-
-func (o *TaobaoTbkRelationRefund) SetSearchType(value int) {
-	o.params["search_type"] = value
-}
-
-func (o *TaobaoTbkRelationRefund) SetPageNo(value int) {
-	o.params["page_no"] = value
-}
-
-func (o *TaobaoTbkRelationRefund) SetPageSize(value int) {
-	o.params["page_size"] = value
+func (o *TaobaoTbkRelationRefund) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkRelationRefund) GetMethod() string {

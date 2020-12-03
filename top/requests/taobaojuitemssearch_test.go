@@ -13,10 +13,10 @@ func TestTaobaoJuItemsSearch(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoJuItemsSearchRequest()
-	req.SetPid("mm_109757283_218800301_107356100348")
-	req.SetCurrentPage(1)
-	req.SetPageSize(20)
-	req.SetWord("显示器")
+	req.SetParam("pid", "mm_109757283_218800301_107356100348")
+	req.SetParam("current_page", "1")
+	req.SetParam("page_size", "20")
+	req.SetParam("word", "显示器")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

@@ -32,24 +32,8 @@ func (o TaobaoTbkActivityInfoGet) Result(data []byte) (TaobaoTbkActivityInfoGetR
 	return result, nil
 }
 
-func (o *TaobaoTbkActivityInfoGet) SetAdzoneId(value int) {
-	o.params["adzone_id"] = value
-}
-
-func (o *TaobaoTbkActivityInfoGet) SetSubPid(value string) {
-	o.params["sub_pid"] = value
-}
-
-func (o *TaobaoTbkActivityInfoGet) SetRelationId(value int) {
-	o.params["relation_id"] = value
-}
-
-func (o *TaobaoTbkActivityInfoGet) SetActivityMaterialId(value string) {
-	o.params["activity_material_id"] = value
-}
-
-func (o *TaobaoTbkActivityInfoGet) SetUnionId(value string) {
-	o.params["union_id"] = value
+func (o *TaobaoTbkActivityInfoGet) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkActivityInfoGet) GetMethod() string {

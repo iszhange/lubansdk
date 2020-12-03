@@ -13,7 +13,7 @@ func TestTaobaoTbkItemClickExtract(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkItemClickExtractRequest()
-	req.SetClickUrl("https://s.click.taobao.com/970rHuu")
+	req.SetParam("click_url", "https://s.click.taobao.com/970rHuu")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

@@ -32,20 +32,8 @@ func (o TaobaoTbkDgVegasSendStatus) Result(data []byte) (TaobaoTbkDgVegasSendSta
 	return result, nil
 }
 
-func (o *TaobaoTbkDgVegasSendStatus) SetRelationId(value string) {
-	o.params["relation_id"] = value
-}
-
-func (o *TaobaoTbkDgVegasSendStatus) SetSpecialId(value string) {
-	o.params["special_id"] = value
-}
-
-func (o *TaobaoTbkDgVegasSendStatus) SetDeviceValue(value string) {
-	o.params["device_value"] = value
-}
-
-func (o *TaobaoTbkDgVegasSendStatus) SetDeviceType(value string) {
-	o.params["device_type"] = value
+func (o *TaobaoTbkDgVegasSendStatus) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkDgVegasSendStatus) GetMethod() string {

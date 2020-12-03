@@ -32,8 +32,8 @@ func (o TaobaoTbkDgVegasTljInstanceReport) Result(data []byte) (TaobaoTbkDgVegas
 	return result, nil
 }
 
-func (o *TaobaoTbkDgVegasTljInstanceReport) SetRightsId(value string) {
-	o.params["rights_id"] = value
+func (o *TaobaoTbkDgVegasTljInstanceReport) SetParam(key, value string) {
+	o.params[key] = value
 }
 
 func (o *TaobaoTbkDgVegasTljInstanceReport) GetMethod() string {

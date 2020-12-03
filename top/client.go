@@ -45,7 +45,7 @@ type Client struct {
 	method       string // API接口名称
 	sign         string
 	timestamp    string // 时间戳，格式为yyyy-MM-dd HH:mm:ss，时区为GMT+8，例如：2015-01-01 12:00:00。淘宝API服务端允许客户端请求最大时间误差为10分钟
-	simplify     bool   // 是否采用精简JSON返回格式，仅当format=json时有效，默认值为：false
+	simplify     string // 是否采用精简JSON返回格式，仅当format=json时有效，默认值为：false
 	req          requests.Request
 }
 
@@ -54,7 +54,7 @@ func New() *Client {
 	c.Gateway = HTTPS_GATEWAY
 	c.SignMethod = MD5
 	c.Format = JSON
-	c.simplify = true
+	c.simplify = "true"
 	c.V = "2.0"
 	c.Timeout = 3
 
@@ -86,7 +86,7 @@ func (c *Client) getParams() requests.Parameter {
 	if c.PartnerId != "" {
 		params["partner_id"] = c.PartnerId
 	}
-	if c.simplify {
+	if c.simplify == "true" {
 		params["simplify"] = c.simplify
 	}
 

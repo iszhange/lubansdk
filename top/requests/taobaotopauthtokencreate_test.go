@@ -13,7 +13,7 @@ func TestTaobaoTopAuthTokenCreate(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTopAuthTokenCreateRequest()
-	req.SetCode("7oBgi6L31Vr1Gk9wbT7T4Naf9071114")
+	req.SetParam("code", "7oBgi6L31Vr1Gk9wbT7T4Naf9071114")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)
